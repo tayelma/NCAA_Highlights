@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::<your account number>:user/<iam user>",
+                "Service": [
+                    "ecs-tasks.amazonaws.com",
+                    "ec2.amazonaws.com",
+                    "mediaconvert.amazonaws.com"
+                ]
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
